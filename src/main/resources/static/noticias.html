@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sistemas Comerciales SIA LTDA.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/apiclientRegistrarse.js"></script>
+        <script src="js/registrarse.js"></script>
+    </head>
+    <body id="idFondo">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+                    <div class="jumbotron" id="idPanel">
+                        <div class="form-group">
+                            <h2 id="idTitulo2">Noticias</h2>         
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Noticias CNN</th>
+                                        <th><a onclick="registrarse.cargarNoticias('CNN')" class="btn btn-primary ">Consultar</a></th>
+                                    </tr>
+                                        <th>Diario El mundo</th>
+                                        <th><a onclick="registrarse.cargarNoticias('elMundo')" class="btn btn-primary ">Consultar</a></th>
+                                    </tr>
+                                    </tr>
+                                        <th>Diario La Gaceta</th>
+                                        <th><a onclick="registrarse.cargarNoticias('laGaceta')" class="btn btn-primary ">Consultar</a></th>
+                                    </tr>
+                                    </tr>
+                                        <th>Diario Marca</th>
+                                        <th><a onclick="registrarse.cargarNoticias('marca')" class="btn btn-primary ">Consultar</a></th>
+                                    </tr>
+                                    </tr>
+                                        <th>Diario la nación</th>
+                                        <th><a onclick="registrarse.cargarNoticias('laNacion')" class="btn btn-primary ">Consultar</a></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            </div>   
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+                    <div class="jumbotron" id="idPanel">
+                        <div class="form-group">
+                            <h2 id="idTitulo"></h2>         
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Titulo</th>
+                                        <th>Descripcion</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="registrosNoticias">
+                                </tbody>
+                            </table> 
+                            <a href="/index.html" class="btn btn-warning btn-block">Atrás</a>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            </div>   
+        </div>
+    </body>
+</html>
